@@ -78,7 +78,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(6,8,15,.94);backdrop-filte
 .vk.b{top:-1px;right:-1px;border-top-width:2px;border-right-width:2px;border-radius:0 2px 0 0}
 .vk.c{bottom:-1px;left:-1px;border-bottom-width:2px;border-left-width:2px;border-radius:0 0 0 2px}
 .vk.d{bottom:-1px;right:-1px;border-bottom-width:2px;border-right-width:2px;border-radius:0 0 2px 0}
-.video-frame video,.video-frame img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;object-position:top center}
+.video-frame video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
 .hero-video-glow{position:relative}
 .hero-video-glow::before{content:'';position:absolute;inset:-20px;background:radial-gradient(ellipse,rgba(26,92,255,.12) 0%,transparent 65%);border-radius:22px;pointer-events:none;z-index:-1}
 .video-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:12px}
@@ -107,7 +107,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(6,8,15,.94);backdrop-filte
 
 /* ABOUT */
 .about-card{background:var(--card);border:1px solid var(--b);border-radius:16px;overflow:hidden;margin-top:32px;display:flex;flex-direction:column}
-.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top center;display:block}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center top;display:block}
 .about-img-err{width:100%;aspect-ratio:4/3;background:var(--card2);display:none;align-items:center;justify-content:center;font-size:4rem;color:var(--muted)}
 .about-body{padding:24px 22px}
 .about-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
@@ -155,7 +155,7 @@ footer p{font-size:.7rem;color:var(--muted)}
   .nav-links{display:flex}
   .logo{font-size:1.35rem}
   .about-card{flex-direction:row}
-  .about-img{width:320px;min-width:320px;aspect-ratio:auto;height:auto;object-position:center top;align-self:stretch;flex-shrink:0}
+  .about-img{width:320px;min-width:320px;aspect-ratio:auto;height:auto;object-position:center center;align-self:stretch;flex-shrink:0}
   .about-img-err{width:320px;min-width:320px;aspect-ratio:auto;height:100%}
   .about-body{padding:32px 30px;flex:1}
   .feat-grid{gap:14px}
@@ -237,14 +237,12 @@ footer p{font-size:.7rem;color:var(--muted)}
         <div class="hero-video-glow">
           <div class="video-frame">
             <div class="vk a"></div><div class="vk b"></div><div class="vk c"></div><div class="vk d"></div>
-            <video controls preload="metadata" poster="tmarz.jpeg">
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            </video>
+            <video playsinline controls preload="metadata"><source src="your-video.mp4" type="video/mp4"></video>
           </div>
           <div class="video-meta">
-            <div class="vmeta"><em>⏱</em> Replace with any MP4</div>
-            <div class="vmeta"><em>📊</em> Poster uses local image</div>
-            <div class="vmeta"><em>🔒</em> Ready for Vercel</div>
+            <div class="vmeta"><em>⏱</em> 4 min watch</div>
+            <div class="vmeta"><em>📊</em> Real trades shown</div>
+            <div class="vmeta"><em>🔒</em> No email needed</div>
           </div>
         </div>
       </div>
@@ -312,7 +310,7 @@ footer p{font-size:.7rem;color:var(--muted)}
     <span class="sec-tag r">About</span>
     <h2 class="sec-h r">The Person Behind It</h2>
     <div class="about-card r">
-      <img class="about-img" src="tmarz.jpeg" alt="T Marz — Trader, Dubai" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <img class="about-img" src="tmarz07.jpeg" alt="T Marz — Trader, Dubai" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="about-img-err">👤</div>
       <div class="about-body">
         <div class="about-top">
